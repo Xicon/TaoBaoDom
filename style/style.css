@@ -1,3 +1,98 @@
+.maninContentRightUserText {
+  width: 290px;
+  text-align: center;
+}
 
+.maninContentRightUserTextBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.maninContentRightUserTextBoxT1,
+.maninContentRightUserTextBoxT2 {
+  float: left;
+  border-radius: 12px;
+  background-color: #ffe4db;
+}
+.maninContentRightUserTextBoxT1 p,
+.maninContentRightUserTextBoxT2 p {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 16px;
+}
+.maninContentRightUserTextBoxT1 a,
+.maninContentRightUserTextBoxT2 a {
+  color: #FF5000;
+  display: inline-block;
+  padding: 0 5px;
+  width: 84px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.maninContentRightUserTextBoxT1 {
+  margin-right: 10px;
+}
+.maninContentRightUserTextBoxT1 p {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -528px;
+}
+
+.maninContentRightUserTextBoxT2 p {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -572px;
+}
+
+.maninContentRightButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 290px;
+  height: 40px;
+}
+.maninContentRightButton button {
+  border-radius: 5px;
+  color: #f4f4f4;
+  outline: none;
+  border: none;
+  width: 92px;
+  height: 25px;
+  background-image: linear-gradient(to right, #ff5000 0, #ff6f06 100%);
+}
+
+.maninContentRightImg {
+  width: 290px;
+  height: 65px;
+}
+.maninContentRightImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.maninContentRightItem {
+  width: 290px;
+  height: 77px;
+}
+.maninContentRightItem ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 24px;
+}
+.maninContentRightItem ol li {
+  width: 32px;
+  float: left;
+}
+.maninContentRightItem ol .maninContentRightItemDom {
+  border-bottom: 2px solid #FF5000;
+}
+.maninContentRightItem .maninContentRightItemBanner ol li h5 {
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */

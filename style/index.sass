@@ -161,11 +161,13 @@ header
     height: auto
 
     img:first-child
+      cursor: pointer
       transform: translateY(4px) translateX(10px)
       width: 25px
       height: 25px
 
     img:last-child
+      cursor: pointer
       transform: translateX(10px) translateY(6px)
 
     input
@@ -187,7 +189,7 @@ header
 
     p
       display: inline-block
-
+      cursor: pointer
       font-size: 18px
       line-height: 40px
       color: #FFFFFF
@@ -225,6 +227,7 @@ header
     background-color: $default-bc
 
     p
+      cursor: pointer
       color: black
       text-align: center
       line-height: 14px
@@ -244,51 +247,120 @@ main
   display: flex
   justify-content: center
 
-
   aside
-    //float: left
-    display: inline-block
     width: 200px
     height: 520px
-    background-color: aquamarine
 
-    ol
+    position: relative
 
+
+    .aside
+      float: left
       width: 200px
       height: 520px
-      background-color: aqua
 
-      li
-        border: 1px solid red
-        width: 200px
-        height: 34px
-
-      li:hover .maninContentBanner li
-        display: inline-block
-
-  .maninContentBanner
-    //float: left
-    display: inline-block
-    width: 700px
-    height: 520px
-    background-color: rebeccapurple
+    .asideCite
+      width: 200px
+      height: 34px
+      line-height: 34px
+      text-align: center
+      background-color: $red
 
     ol
-      display: none
-      width: 700px
-      height: 520px
-      background-color: aqua
+      border: 1px solid $red
 
     li
-      display: none
+      width: 200px
+      height: 34px
+      line-height: 34px
+
+    span:last-child
+      float: right
+      padding-right: 10px
+
+    .asideBox
+      position: absolute
+      top: 44px
+      left: 200px
       width: 700px
+      height: 520px
+
+      .asideItem
+        display: none
+        width: 700px
+        height: 520px
+
+
+  .maninContentBanner
+
+    float: left
+    width: 700px
+    height: 520px
+
+    .maninContentNav
+      width: 900px
       height: 34px
 
+      font-size: $font
+      background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%)
+
+      li
+        float: left
+        margin-left: 5px
+        color: #FFFFFF
+        line-height: 30px
+
+        a
+          color: #FFFFFF
+
+    .swiper-container
+      padding-left: 10px
+      margin-top: 10px
+      float: left
+      width: 520px
+      height: 280px
+
+    .maninContentBannerImg
+      margin-top: 10px
+      margin-left: 10px
+      float: left
+      width: 160px
+      height: 280px
+
+    .maninContentBannerTab
+      margin-left: 10px
+      width: 520px
+      height: 30px
+
+      img
+        margin-top: 10px
+        display: inline-block
+
   .maninContentRight
-    //float: left
-    display: inline-block
+    float: right
     width: 300px
     height: 520px
-    background-color: yellow
+    background-color: #cccccc
 
+    .maninContentRightUser
 
+      align-items: start
+      width: 290px
+      height: 90px
+      background: url("../media/images/index.png") no-repeat
+      background-size: cover
+
+      .maninContentRightUserHeadText
+        width: 290px
+        height: auto
+        margin: 5px 1px 0
+
+      .maninContentRightUserHead
+        margin: 0 auto
+        width: 50px
+        height: 50px
+
+        img
+          width: 50px
+          height: 50px
+          border-radius: 50%

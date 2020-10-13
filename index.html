@@ -7,6 +7,8 @@
     <!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
     <link rel="stylesheet" href="style/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/animation.css"/>
 </head>
 <body>
 <header>
@@ -78,7 +80,7 @@
                     <form action="" class="form">
                         <label class="label">
                             <img src="media/images/搜索.png" alt="">
-                            <input name="headerSearch" type="text" value="裤子加绒">
+                            <input min="0" max="10" name="headerSearch" type="search" value="裤子加绒">
                             <img src="media/images/相机.png" alt="">
                         </label>
                         <div class="headerSearch">
@@ -122,8 +124,18 @@
 
 <main>
     <aside>
-        <ol>
-            <li>1</li>
+        <div class="asideCite">
+            <cite>主题市场</cite>
+        </div>
+        <ol class="aside">
+            <li>
+                <a href="">女装</a>
+                <span> / </span>
+                <a href="">内衣</a>
+                <span> / </span>
+                <a href="">家居</a>
+                <span> > </span>
+            </li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
@@ -139,50 +151,161 @@
             <li>14</li>
             <li>15</li>
         </ol>
+        <div class="asideBox">
+            <div class="asideItem">
+                大盒子1
+            </div>
+            <div class="asideItem">
+                2
+            </div>
+            <div class="asideItem">
+                3
+            </div>
+            <div class="asideItem">
+                4
+            </div>
+            <div class="asideItem">
+                5
+            </div>
+            <div class="asideItem">
+                6
+            </div>
+            <div class="asideItem">
+                7
+            </div>
+            <div class="asideItem">
+                8
+            </div>
+            <div class="asideItem">
+                9
+            </div>
+            <div class="asideItem">
+                10
+            </div>
+            <div class="asideItem">
+                11
+            </div>
+            <div class="asideItem">
+                12
+            </div>
+            <div class="asideItem">
+                13
+            </div>
+            <div class="asideItem">
+                14
+            </div>
+            <div class="asideItem">
+                15
+            </div>
+        </div>
+
     </aside>
     <div class="maninContentBanner">
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-        </ol>
-        <!--                &lt;!&ndash; 加载Swiper 幻灯片 &ndash;&gt;-->
-        <!--                <div class="swiper-container">-->
-        <!--                    <div class="swiper-wrapper">-->
-        <!--                        <div class="swiper-slide">-->
-        <!--                            <img src="media/images/ba1.jpg" alt="">-->
-        <!--                        </div>-->
-        <!--                        <div class="swiper-slide">-->
-        <!--                            <img src="media/images/ba2.jpg" alt="">-->
-        <!--                        </div>-->
-        <!--                        <div class="swiper-slide">-->
-        <!--                            <img src="media/images/ba3.png" alt="">-->
-        <!--                        </div>-->
-        <!--                        <div class="swiper-slide">-->
-        <!--                            <img src="media/images/ba4.jpg" alt="">-->
-        <!--                        </div>-->
-        <!--                        <div class="swiper-slide">-->
-        <!--                            <img src="media/images/ba5.jpg" alt="">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
+        <div class="maninContentNav">
+            <ol>
+                <li><a href="">天猫</a></li>
+                <li><a href="">聚划算</a></li>
+                <li><a href="">天猫超市</a></li>
+                <li><span>|</span></li>
+                <li><a href="">淘抢购</a></li>
+                <li><a href="">电器城</a></li>
+                <li><a href="">司法拍卖</a></li>
+                <li><a href="">淘宝心选</a></li>
+                <li><span>|</span></li>
+                <li><a href="">飞猪旅行</a></li>
+                <li><a href="">智能生活</a></li>
+                <li><a href="">苏宁易购</a></li>
+            </ol>
+        </div>
+        <!-- 加载Swiper 幻灯片 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="media/images/ba1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="media/images/ba2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="media/images/ba3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="media/images/ba4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="media/images/ba5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="maninContentBannerImg">
+            <img src="https://img.alicdn.com/imgextra/i2/6000000004927/O1CN01UsxnES1mGc2lKh8yq_!!6000000004927-0-octopus.jpg_290x290q90.jpg_.webp"
+                 alt="">
+        </div>
+        <div class="maninContentBannerTab">
+            <img src="https://img.alicdn.com/tfs/TB1thpcbUgQMeJjy0FjXXaExFXa-122-22.png" alt="">
+            <span>理想生活上天猫</span>
+        </div>
     </div>
-
     <div class="maninContentRight">
-
+        <div class="maninContentRightUser">
+            <div class="maninContentRightUserHead">
+                <img src="media/images/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_50x50.jpg" alt="">
+            </div>
+            <div class="maninContentRightUserText">
+                <p>Hi!你好</p>
+            </div>
+            <div class="maninContentRightUserTextBox">
+                <div class="maninContentRightUserTextBoxT1">
+                    <p></p>
+                    <a href="">领淘金币抵钱</a>
+                </div>
+                <div class="maninContentRightUserTextBoxT2">
+                    <p></p>
+                    <a href="">会员俱乐部</a>
+                </div>
+            </div>
+        </div>
+        <div class="maninContentRightButton">
+            <button type="button">登录</button>
+            <button type="button">注册</button>
+            <button type="button">开店</button>
+        </div>
+        <div class="maninContentRightImg">
+            <img src="media/images/TB15R3vP7Y2gK0jSZFgXXc5OFXa-540-120.jpg" alt="">
+        </div>
+        <div class="maninContentRightItem">
+            <ol>
+                <li class="maninContentRightItemDom"><a href="">公告</a></li>
+                <li><a href="">规则</a></li>
+                <li><a href="">论坛</a></li>
+                <li><a href="">安全</a></li>
+                <li><a href="">公益</a></li>
+            </ol>
+            <div class="maninContentRightItemBanner">
+                <ol>
+                    <li>
+                        <h5>95公益周阿里、腾讯等六家公司同台联合做公益</h5>
+                    </li>
+                    <li>
+                        <p>新增《淘宝网汽配行业《淘宝网区域零售服务说明》变更公示通知</p>
+                    </li>
+                    <li>
+                        <p>淘宝618大促报名</p>
+                        <p>金牌卖家志愿者招募</p>
+                    </li>
+                    <li>
+                        <p>魔豆妈妈公益项目</p>
+                        <p>让母爱永不打烊！</p>
+                    </li>
+                    <li>
+                        <p>淘宝公益平台正式更名</p>
+                        <p>益起来商家招募即将截止</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
     </div>
+
 
 </main>
 
@@ -196,5 +319,6 @@
 <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
 <script src="javaScript/swiper/swiper-bundle.min.js"></script>
 <script src="javaScript/swiper/swipe_index.js"></script>
+<script src="javaScript/index.js"></script>
 </body>
 </html>

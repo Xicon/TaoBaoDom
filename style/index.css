@@ -135,11 +135,13 @@ header .headerHistRight li {
   height: auto;
 }
 .headerLSI .label img:first-child {
+  cursor: pointer;
   transform: translateY(4px) translateX(10px);
   width: 25px;
   height: 25px;
 }
 .headerLSI .label img:last-child {
+  cursor: pointer;
   transform: translateX(10px) translateY(6px);
 }
 .headerLSI .label input {
@@ -161,6 +163,7 @@ header .headerHistRight li {
 }
 .headerLSI .headerSearch p {
   display: inline-block;
+  cursor: pointer;
   font-size: 18px;
   line-height: 40px;
   color: #FFFFFF;
@@ -197,6 +200,7 @@ header .headerHistRight li {
   background-color: #f4f4f4;
 }
 .headerLSI .headerContentImageBoxClick p {
+  cursor: pointer;
   color: black;
   text-align: center;
   line-height: 14px;
@@ -218,46 +222,116 @@ main {
   justify-content: center;
 }
 main aside {
-  display: inline-block;
   width: 200px;
   height: 520px;
-  background-color: aquamarine;
+  position: relative;
+}
+main aside .aside {
+  float: left;
+  width: 200px;
+  height: 520px;
+}
+main aside .asideCite {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #ff5401;
 }
 main aside ol {
-  width: 200px;
-  height: 520px;
-  background-color: aqua;
+  border: 1px solid #ff5401;
 }
-main aside ol li {
-  border: 1px solid red;
+main aside li {
   width: 200px;
   height: 34px;
+  line-height: 34px;
 }
-main aside ol li:hover .maninContentBanner li {
-  display: inline-block;
+main aside span:last-child {
+  float: right;
+  padding-right: 10px;
+}
+main aside .asideBox {
+  position: absolute;
+  top: 44px;
+  left: 200px;
+  width: 700px;
+  height: 520px;
+}
+main aside .asideBox .asideItem {
+  display: none;
+  width: 700px;
+  height: 520px;
 }
 main .maninContentBanner {
-  display: inline-block;
+  float: left;
   width: 700px;
   height: 520px;
-  background-color: rebeccapurple;
 }
-main .maninContentBanner ol {
-  display: none;
-  width: 700px;
-  height: 520px;
-  background-color: aqua;
-}
-main .maninContentBanner li {
-  display: none;
-  width: 700px;
+main .maninContentBanner .maninContentNav {
+  width: 900px;
   height: 34px;
+  font-size: 100%;
+  background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+}
+main .maninContentBanner .maninContentNav li {
+  float: left;
+  margin-left: 5px;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+main .maninContentBanner .maninContentNav li a {
+  color: #FFFFFF;
+}
+main .maninContentBanner .swiper-container {
+  padding-left: 10px;
+  margin-top: 10px;
+  float: left;
+  width: 520px;
+  height: 280px;
+}
+main .maninContentBanner .maninContentBannerImg {
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  width: 160px;
+  height: 280px;
+}
+main .maninContentBanner .maninContentBannerTab {
+  margin-left: 10px;
+  width: 520px;
+  height: 30px;
+}
+main .maninContentBanner .maninContentBannerTab img {
+  margin-top: 10px;
+  display: inline-block;
 }
 main .maninContentRight {
-  display: inline-block;
+  float: right;
   width: 300px;
   height: 520px;
-  background-color: yellow;
+  background-color: #cccccc;
+}
+main .maninContentRight .maninContentRightUser {
+  align-items: start;
+  width: 290px;
+  height: 90px;
+  background: url("../media/images/index.png") no-repeat;
+  background-size: cover;
+}
+main .maninContentRight .maninContentRightUser .maninContentRightUserHeadText {
+  width: 290px;
+  height: auto;
+  margin: 5px 1px 0;
+}
+main .maninContentRight .maninContentRightUser .maninContentRightUserHead {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+main .maninContentRight .maninContentRightUser .maninContentRightUserHead img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */
