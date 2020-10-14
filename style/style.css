@@ -139,6 +139,8 @@
 }
 .maninContentRightFn ol li span {
   display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
   width: 24px;
   height: 24px;
 }
@@ -172,6 +174,27 @@
 }
 .maninContentRightFn .maninContentRightFnBox2 li:last-child span {
   background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -310px;
+}
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1L {
+  float: left;
+  height: 30px;
+}
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1R {
+  float: right;
+  width: 40px;
+  height: 30px;
+}
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1R p, .maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1R span {
+  display: inline-block;
+}
+.maninContentRightFn .maninContentRightFnBox3 ol li {
+  float: left;
+  width: 58px;
+  height: 44px;
+}
+.maninContentRightFn .maninContentRightFnBox3 ol li a img {
+  width: 32px;
+  height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
