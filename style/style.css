@@ -27,6 +27,7 @@
 }
 .maninContentRightUserTextBoxT1 a,
 .maninContentRightUserTextBoxT2 a {
+  font-size: 13px;
   color: #FF5000;
   display: inline-block;
   padding: 0 5px;
@@ -77,22 +78,100 @@
   width: 290px;
   height: 77px;
 }
-.maninContentRightItem ol {
+.maninContentRightItem .maninContentRightItemBox {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   height: 24px;
+  background-color: #FFFFFF;
 }
-.maninContentRightItem ol li {
+.maninContentRightItem .maninContentRightItemBox li {
   width: 32px;
-  float: left;
 }
-.maninContentRightItem ol .maninContentRightItemDom {
+.maninContentRightItem .maninContentRightItemBox .maninContentRightItemDom {
+  width: 32px;
+  height: 20px;
   border-bottom: 2px solid #FF5000;
+  transition: all 0.3s linear 0.1s;
 }
-.maninContentRightItem .maninContentRightItemBanner ol li h5 {
+.maninContentRightItem .maninContentRightItemBox .maninContentRightItemDom:hover {
+  opacity: 1;
+}
+.maninContentRightItem .maninContentRightItemBox li::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+.maninContentRightItem .maninContentRightItemBanner .maninContentRightItemBannerBox {
+  width: 290px;
+  height: 37px;
+}
+.maninContentRightItem .maninContentRightItemBanner .maninContentRightItemBannerBox li {
+  width: 280px;
+  height: 37px;
+  line-height: 37px;
+  display: none;
   overflow: hidden;
+  padding: 0 5px;
+}
+.maninContentRightItem .maninContentRightItemBanner .maninContentRightItemBannerBox p {
+  color: #FF5000;
+}
+
+.maninContentRightFn {
+  width: 290px;
+  height: 152px;
+}
+.maninContentRightFn ol {
+  width: 290px;
+  height: 76px;
+  display: flex;
+}
+.maninContentRightFn ol li {
+  display: inline-block;
+  width: 72.5px;
+  height: 76px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.maninContentRightFn ol li span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.maninContentRightFn ol li p {
+  text-align: center;
+  display: inline-block;
+  line-height: 24px;
+  width: 72.5px;
+  height: 24px;
+}
+.maninContentRightFn .maninContentRightFnBox1 li:first-child span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 0;
+}
+.maninContentRightFn .maninContentRightFnBox1 li:nth-child(2) span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -45px;
+}
+.maninContentRightFn .maninContentRightFnBox1 li:nth-child(3) span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -90px;
+}
+.maninContentRightFn .maninContentRightFnBox1 li:nth-child(4) span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -135px;
+}
+.maninContentRightFn .maninContentRightFnBox2 li:first-child span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -175px;
+}
+.maninContentRightFn .maninContentRightFnBox2 li:nth-child(2) span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -220px;
+}
+.maninContentRightFn .maninContentRightFnBox2 li:nth-child(3) span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -265px;
+}
+.maninContentRightFn .maninContentRightFnBox2 li:last-child span {
+  background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -310px;
 }
 
 /*# sourceMappingURL=style.css.map */
