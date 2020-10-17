@@ -1,3 +1,352 @@
+.headerLSI .headerContentImageBox, .headerLSI .headerSearchBox, .headerLSI .logo, .headerLSI .headerContentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: tahoma, webfont, Serif;
+  src: url("../media/fonts/iconfont.eot");
+  src: url("../media/fonts/iconfont.woff") format("woff");
+  src: url("../media/fonts/iconfont.woff2") format("woff2");
+  src: url("../media/fonts/iconfont.ttf") format("truetype");
+  src: url("../media/fonts/iconfont.svg") format("svg");
+}
+body {
+  font-family: tahoma, webfont, serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-size: 14px;
+}
+
+header {
+  width: 100vw;
+  height: 36px;
+}
+header nav {
+  width: 1200px;
+  height: 35px;
+  margin: 0 auto;
+  line-height: 35px;
+}
+header .headerMapNone {
+  width: 90px;
+  height: 200px;
+  overflow: auto;
+  display: none;
+}
+header .headerMapNone li {
+  width: 90px;
+  height: 30px;
+}
+header .headerMap {
+  float: left;
+  width: 90px;
+  height: 35px;
+  background-color: #f4f4f4;
+}
+header .headerMap:hover .headerMapNone {
+  display: inline-block;
+}
+header .headerHistLeft li {
+  margin: 0 10px;
+  float: left;
+}
+header .headerHistLeft li:first-child span a {
+  color: #ff5401;
+}
+header .headerHistRight {
+  float: right;
+}
+header .headerHistRight li {
+  margin: 0 10px;
+  float: left;
+}
+
+.headerStreamer {
+  width: 100%;
+  height: 70px;
+  background-color: #e71b1b;
+}
+.headerStreamer .headerStreamerImage {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+.headerStreamer .headerStreamerImage img {
+  width: 1200px;
+}
+.headerStreamer .headerContent {
+  width: 100%;
+  height: 120px;
+  background-color: #FFFFFF;
+}
+
+.headerLSI {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+.headerLSI .headerContentBox {
+  width: 1200px;
+  height: 120px;
+  justify-content: space-evenly;
+}
+.headerLSI .logo {
+  width: 140px;
+  height: 120px;
+  flex-direction: column;
+}
+.headerLSI .headerSearchBox {
+  width: 750px;
+  height: 120px;
+  flex-direction: column;
+}
+.headerLSI .headerSearchBox .headerSearchBoxCite li {
+  float: left;
+  width: 36px;
+  height: 22px;
+}
+.headerLSI .form {
+  width: 630px;
+  height: auto;
+  border: 2px solid #ff5401;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerLSI .label {
+  width: 550px;
+  display: inline-block;
+  height: auto;
+}
+.headerLSI .label img:first-child {
+  cursor: pointer;
+  transform: translateY(4px) translateX(10px);
+  width: 25px;
+  height: 25px;
+}
+.headerLSI .label img:last-child {
+  cursor: pointer;
+  transform: translateX(10px) translateY(6px);
+}
+.headerLSI .label input {
+  border: none;
+  width: 450px;
+  height: 40px;
+  line-height: 20px;
+  transform: translateX(10px);
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
+}
+.headerLSI .headerSearch {
+  float: right;
+  width: 74px;
+  height: auto;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+  text-align: center;
+}
+.headerLSI .headerSearch p {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+.headerLSI .headerSearchBoxText {
+  width: 630px;
+  font-size: 12px;
+}
+.headerLSI .headerSearchBoxText li {
+  padding: 2px 5px;
+  float: left;
+}
+.headerLSI .headerContentImageBox {
+  position: relative;
+  width: 300px;
+  height: 120px;
+  text-align: center;
+}
+.headerLSI .headerContentImage {
+  position: absolute;
+  width: 76px;
+  height: 87px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.headerLSI .headerContentImage img {
+  width: 62px;
+  height: 62px;
+}
+.headerLSI .headerContentImageBoxClick {
+  position: absolute;
+  transform: translateX(-15px);
+  border: 1px solid #f4f4f4;
+  background-color: #f4f4f4;
+}
+.headerLSI .headerContentImageBoxClick p {
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  line-height: 14px;
+  font-size: 100%;
+  width: 14px;
+  height: 14px;
+}
+.headerLSI .headerContentImageBoxText {
+  color: #ff5401;
+  padding: 1px;
+}
+
+main {
+  width: 100%;
+  height: 520px;
+  background-color: #f4f4f4;
+  margin-top: 190px;
+  display: flex;
+  justify-content: center;
+}
+main aside {
+  width: 200px;
+  height: 520px;
+  position: relative;
+}
+main aside .aside {
+  float: left;
+  width: 200px;
+  height: 520px;
+}
+main aside .asideCite {
+  width: 202px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #ff5401;
+}
+main aside ol {
+  border: 1px solid #ff5401;
+}
+main aside li {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+}
+main aside span:last-child {
+  float: right;
+  padding-right: 10px;
+}
+main aside .asideBox {
+  position: absolute;
+  top: 44px;
+  left: 200px;
+  width: 700px;
+  height: 280px;
+}
+main aside .asideBox .asideItem {
+  display: none;
+  width: 700px;
+  height: 520px;
+}
+main .maninContentBanner {
+  float: left;
+  position: relative;
+  width: 700px;
+  height: 520px;
+}
+main .maninContentBanner .maninContentNav {
+  width: 1000px;
+  height: 34px;
+  font-size: 100%;
+  background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+}
+main .maninContentBanner .maninContentNav ol {
+  width: 100%;
+  height: 34px;
+}
+main .maninContentBanner .maninContentNav ol li {
+  float: left;
+  margin-left: 10px;
+  color: #FFFFFF;
+  line-height: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+main .maninContentBanner .maninContentNav ol li a {
+  color: #FFFFFF;
+}
+main .maninContentBanner .swiper-container {
+  padding-left: 10px;
+  margin-top: 10px;
+  float: left;
+  width: 520px;
+  height: 280px;
+}
+main .maninContentBanner .maninContentBannerImg {
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  width: 160px;
+  height: 280px;
+}
+main .maninContentBanner .maninContentBannerTab {
+  margin-left: 10px;
+  width: 520px;
+  height: 30px;
+  box-sizing: border-box;
+}
+main .maninContentBanner .maninContentBannerTab img {
+  margin-top: 10px;
+  display: inline-block;
+}
+main .maninContentBanner .maninContentBannerTab p {
+  border-bottom: 3px solid #ff1648;
+}
+main .maninContentRight {
+  margin-top: 45px;
+  margin-left: 10px;
+  float: right;
+  width: 290px;
+  height: 520px;
+  background-color: #cccccc;
+}
+main .maninContentRight .maninContentRightUser {
+  align-items: start;
+  width: 290px;
+  height: 90px;
+  background: url("../media/images/index.png") no-repeat;
+  background-size: cover;
+}
+main .maninContentRight .maninContentRightUser .maninContentRightUserHeadText {
+  width: 290px;
+  height: auto;
+  margin: 5px 1px 0;
+}
+main .maninContentRight .maninContentRightUser .maninContentRightUserHead {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+main .maninContentRight .maninContentRightUser .maninContentRightUserHead img {
+  width: 50px;
+  height: 50px;
+  clip-path: circle(50%);
+}
+
 .maninContentRightUserText {
   width: 290px;
   text-align: center;
@@ -28,7 +377,7 @@
 .maninContentRightUserTextBoxT1 a,
 .maninContentRightUserTextBoxT2 a {
   font-size: 13px;
-  color: #FF5000;
+  color: #ff5401;
   display: inline-block;
   padding: 0 5px;
   width: 84px;
@@ -92,7 +441,7 @@
 .maninContentRightItem .maninContentRightItemBox .maninContentRightItemDom {
   width: 32px;
   height: 20px;
-  border-bottom: 2px solid #FF5000;
+  border-bottom: 2px solid #ff5401;
   transition: all 0.3s linear 0.1s;
 }
 .maninContentRightItem .maninContentRightItemBox .maninContentRightItemDom:hover {
@@ -118,7 +467,7 @@
   padding: 0 5px;
 }
 .maninContentRightItem .maninContentRightItemBanner .maninContentRightItemBannerBox p {
-  color: #FF5000;
+  color: #ff5401;
 }
 
 .maninContentRightFn {
@@ -175,26 +524,151 @@
 .maninContentRightFn .maninContentRightFnBox2 li:last-child span {
   background: url("../media/images/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png") 0 -310px;
 }
-.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1L {
+.maninContentRightFn .maninContentRightFnBox3 {
+  width: 290px;
+  height: 30px;
+}
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1 {
+  width: 290px;
+  height: 30px;
+}
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1 .maninContentRightFnBox3-1L {
   float: left;
   height: 30px;
 }
-.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1R {
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1 .maninContentRightFnBox3-1R {
   float: right;
   width: 40px;
   height: 30px;
 }
-.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1R p, .maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1R span {
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1 .maninContentRightFnBox3-1R p, .maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-1 .maninContentRightFnBox3-1R span {
   display: inline-block;
 }
-.maninContentRightFn .maninContentRightFnBox3 ol li {
-  float: left;
-  width: 58px;
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-2 {
+  width: 290px;
   height: 44px;
 }
-.maninContentRightFn .maninContentRightFnBox3 ol li a img {
-  width: 32px;
-  height: 32px;
+.maninContentRightFn .maninContentRightFnBox3 .maninContentRightFnBox3-2 ul {
+  height: 44px;
+  width: 290px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.maninContentBannerListImg {
+  position: absolute;
+  left: 10px;
+  top: 362px;
+  width: 510px;
+  height: 190px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-1 {
+  width: 510px;
+  height: 190px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-1 ol {
+  display: grid;
+  grid-template-rows: repeat(3, 68px);
+  grid-template-columns: repeat(4, 130px);
+  width: 510px;
+  height: 190px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-1 ol li {
+  display: inline-grid;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  width: 127.5px;
+  height: 57px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-1 div {
+  position: absolute;
+  top: 0;
+  right: -180px;
+  width: 160px;
+  height: 190px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-1 div img {
+  width: 160px;
+  height: 200px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-2,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-3,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-4,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-5,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-6 {
+  display: none;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-2,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-3,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-4,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-5,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-6 {
+  background-color: #CCCCCC;
+  width: 510px;
+  height: 190px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-2 a,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-3 a,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-4 a,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-5 a,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-6 a {
+  margin: 0 5px;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-2 a:last-child,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-3 a:last-child,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-4 a:last-child,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-5 a:last-child,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-6 a:last-child {
+  float: right;
+}
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-2 a img,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-3 a img,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-4 a img,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-5 a img,
+.maninContentBannerListImg .maninContentBannerListImgs .maninContentBannerListImgBox-6 a img {
+  width: 245px;
+  height: auto;
+}
+
+article {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+article ol {
+  border-radius: 12px;
+  width: 50px;
+  height: 350px;
+  background-color: #FFFFFF;
+}
+article ol .article_bc {
+  background-color: #ff5401;
+}
+article ol li {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+article ol li:nth-child(2) p {
+  color: #ff5401;
+}
+article ol li:nth-child(3) p {
+  color: #A8C001;
+}
+article ol li:nth-child(4) p {
+  color: #ff5401;
+}
+article ol li:nth-child(n+4) p {
+  color: black;
+}
+article ol li p {
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
